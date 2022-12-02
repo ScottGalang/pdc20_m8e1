@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form name="myform" onsubmit="return(validate())">
+            <div class="row" ng-app="">
+                <label>Employee ID</label>
+                <input type="number" name="empid" required/><br>
+            </div>
+            <div class="row">
+                <label>Employee First Name</label>
+                <input type="text" name="firstname" required/><br>
+                <div class="error" id="nameErr1"></div>
+            </div>
+            <div class="row">
+                <label>Employee Last Name</label>
+                <input type="text" name="lastname" required/><br>
+                <div class="error" id="nameErr2"></div>
+            </div>
+            <div class="row">
+                <label>Employee Address</label>
+                <input type="text" name="address" ng-model="address" required/>
+            </div>
+            <div class="row">
+                <label>Employee Position</label>
+                <input type="text" name="position" ng-model="position" required/>
+            </div>
+            <div class="row">
+                <label>Employee E-mail Address</label>
+                <input type="text" name="email" required/><br>
+                <div class="error" id="emailErr"></div>
+            <div class="row">
+                <label>Employee Contact Number</label>
+                <input type="number" name="contactnumber"/></br>
+            </div>
+            <div class="row">
+                <label>Employee Salary</label>
+                <input type="number" name="salary" required/></br>
+                <div class="error" id="salErr"></div>
+            </div>
+            <div class="row">
+                <label>Employee Username</label>
+                <input type="text" name="username" ng-model="username" required/>
+            </div>
+
+        <input type="submit" value="Submit"/>
+        <script type="text/javascript" src="validation.js"></script>
+        </form>
+    </body>
+</html>
